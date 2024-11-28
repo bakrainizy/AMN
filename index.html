@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> 
+<!-- تعريف نوع الوثيقة HTML وتحديد لغة الصفحة العربية وتهيئة الاتجاه من اليمين لليسار، لأن المحتوى بالعربية -->
+<head>
+    <meta charset="utf-8"> 
+    <!-- ضبط الترميز لعرض الحروف بشكل صحيح -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!-- توفير توافق مع المتصفحات القديمة، مثل Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!-- تحديد طريقة عرض الصفحة لتكون مناسبة للشاشات المختلفة، مثل الهواتف المحمولة -->
+
+    <!-- ===============================================-->
+    <!--    عنوان الوثيقة-->
+    <!-- ===============================================-->
+    <title>آمـن || موقع توعوي للأمان الإلكتروني</title> 
+    <!-- عنوان الصفحة يظهر في تبويب المتصفح وعند مشاركتها في محركات البحث -->
+
+    <!-- ===============================================-->
+    <!--    الأيقونات المفضلة-->
+    <!-- ===============================================-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png"> 
+    <!-- إضافة أيقونة مفضلة تظهر في شريط التبويب في المتصفح -->
+
+    <!-- ===============================================-->
+    <!--    تنسيقات الخطوط والأيقونات-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> 
+    <!-- استيراد مكتبة Font Awesome للأيقونات لتجميل عناصر الواجهة -->
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet"> 
+    <!-- تضمين تنسيقات خاصة بمكتبة Swiper لاستخدام المؤثرات التمريرية -->
+    <link href="assets/css/theme.css" rel="stylesheet" /> 
+    <!-- تضمين التنسيقات الخاصة بالموقع من ملف CSS محلي -->
+
+</head>
+
+<body>
+    <!-- ===============================================-->
+    <!--    المحتوى الرئيسي-->
+    <!-- ===============================================-->
+    <main class="main" id="top"> 
+        <!-- عنصر رئيسي للمحتوى، معرف بـ "top" لتسهيل التنقل والتحكم باستخدام الجافا سكربت -->
+
+        <!-- شريط التنقل -->
+        <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900"> 
+            <!-- شريط التنقل ثابت في الأعلى، يتغير لونه عند التمرير -->
+            <div class="container pt-2">
+                <a class="navbar-brand" href="index.html"> 
+                    <!-- شعار الموقع يظهر كجزء من العلامة التجارية -->
+                    <img src="assets/img/gallery/logo.png" alt="آمـن" />
+                </a>
+                <ul class="navbar-menu"> 
+                    <!-- قائمة الروابط الرئيسية للتنقل -->
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="tips.html">نصائح توعوية</a></li>
+                    <li><a href="attacks.html">أشكال الاحتيالات الإلكترونية</a></li>
+                </ul>
+                <div class="navbar-content">
+                    <button class="btn btn-secondary"><a href="login.html">تسجيل الدخول</a></button> 
+                    <!-- زر لتسجيل الدخول مدمج في شريط التنقل -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- ============================================-->
+        <!-- مقدمة الموقع-->
+        <!-- ============================================-->
+        <section class="hero-section"> 
+            <!-- قسم المقدمة يحتوي على فيديو وخلفية تعريفية بالموقع -->
+            <video autoplay muted loop playsinline class="hero-video"> 
+                <!-- تشغيل الفيديو تلقائيًا، بدون صوت، وبشكل متكرر -->
+                <source src="assets/video/background-video.mp4" type="video/mp4"> 
+                <!-- مصدر الفيديو بصيغة MP4، مدعومة في معظم المتصفحات -->
+            </video>
+            <div class="hero-overlay"></div> 
+            <!-- طبقة فوق الفيديو لزيادة التباين مع النص -->
+            <div class="hero-content text-center"> 
+                <!-- محتوى النصوص في المقدمة، مع تنسيق مركزي -->
+                <h1 class="hero-title text-center">مرحبا بك في موقع آمـن - لحمايتك من الاحتيالات الإلكترونية</h1> 
+                <!-- عنوان رئيسي للموقع -->
+                <p class="hero-description">موقع توعوي يعمل على جميع الأجهزة والمتصفحات لتقديم نصائح وأدوات فعّالة تساعدك على حماية بياناتك وأمانك الشخصي.</p>
+                <!-- وصف قصير للموقع -->
+                <button class="btn btn-primary mt-3">خدماتنا وخططنا</button> 
+                <!-- زر لتحفيز المستخدم على استكشاف الخدمات -->
+            </div>
+        </section>
+
+        <!-- ============================================-->
+        <!-- شعار الموقع أو صورة توضيحية-->
+        <!-- ============================================-->
+        <section style="padding:100px">
+            <div class="container" style="display: flex; align-items: center;"> 
+                <!-- تنسيق الشعار والصورة بجانب بعضهما بتناسق -->
+                <h2 style="width: 50%; text-align: center; font-size: 2rem;">نساعدك على التعرف على أنواع الهجمات الإلكترونية وطريقة الوقاية منها</h2> 
+                <!-- نص توعوي مركزي -->
+                <img class="img-fluid" src="assets/img/gallery/security.webp" alt="صورة توضيحية" style="width: 40%;" /> 
+                <!-- صورة تكميلية توضح موضوع الأمان -->
+            </div>
+        </section>
+
+        <!-- ============================================-->
+        <!-- العلامات التجارية (جهات التعاون المحتملة)-->
+        <!-- ============================================-->
+        <section>
+            <div class="container">
+                <div class="row mx-md-5 px-md-5 d-flex justify-content-evenly"> 
+                    <!-- أيقونات لشركات معروفة قد تكون جهات تعاون محتملة -->
+                    <div class="col-4 col-lg-auto mt-5 mt-lg-0"><img src="assets/img/gallery/brands/google.png" alt="Google" style="height:30px;" /></div>
+                    <div class="col-4 col-lg-auto mt-5 mt-lg-0"><img src="assets/img/gallery/brands/slack.png" alt="Slack" style="height:30px;" /></div>
+                    <div class="col-4 col-lg-auto mt-5 mt-lg-0"><img src="assets/img/gallery/brands/amazon.png" alt="Amazon" style="height:30px;" /></div>
+                    <div class="col-4 col-lg-auto mt-5 mt-lg-0"><img src="assets/img/gallery/brands/zoom.png" alt="Zoom" style="height:30px;" /></div>
+                    <div class="col-4 col-lg-auto mt-5 mt-lg-0"><img src="assets/img/gallery/brands/netflix.png" alt="Netflix" style="height:30px;" /></div>
+                </div>
+                <div class="px-xl-8 px-md-7">
+                    <hr class="mt-7 text-1000" /> 
+                    <!-- خط فاصل لتنسيق التصميم بشكل أنيق -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================-->
+        <!-- قسم الميزات (ماذا نقدم)-->
+        <!-- ============================================-->
+        <section>
+            <div class="container">
+                <h1 class="display-6 fw-semi-bold">ماذا نقدم</h1> 
+                <!-- عنوان رئيسي للقسم -->
+                <p class="fs-2">يقدم موقع "آمـن" خدمات توعوية تعمل على جميع الأجهزة لتوفير تجربة أمان إلكتروني سلسة.</p> 
+                <!-- وصف الخدمات بشكل مختصر -->
+                <div class="row mb-4 mt-6">
+                    <!-- استخدام صفوف وأعمدة لتنظيم ميزات الموقع -->
+                    <div class="col-md-6">
+                        <div class="border rounded-1 border-700 h-100 features-items"> 
+                            <!-- بطاقة ميزات تحتوي على معلومات وصورة -->
+                            <div class="p-5"><img src="assets/img/gallery/dashboardicon.png" alt="لوحة التحكم" style="width:48px;height:48px;" />
+                                <h3 class="pt-3 lh-base">حماية الإنترنت</h3> 
+                                <!-- عنوان الميزة -->
+                                <p class="mb-0">تعرف على كيفية حماية نفسك أثناء تصفح الإنترنت، والطرق الآمنة لاستخدام مواقع التواصل الاجتماعي.</p> 
+                                <!-- وصف مختصر للميزة -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="border rounded-1 border-700 h-100 features-items">
+                            <div class="p-5"><img src="assets/img/gallery/comment.png" alt="تعليق" style="width:48px;height:48px;" />
+                                <h3 class="pt-3 lh-base">التوعية من الاحتيالات</h3>
+                                <p class="mb-0">نصائح عملية ومجانية لكشف الاحتيالات الإلكترونية وحماية نفسك من عمليات الخداع.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="border rounded-1 border-700 h-100 features-items">
+                            <div class="p-5"><img src="assets/img/gallery/trilored.png" alt="الأمان السيبراني" style="width:52px;height: 52px;" />
+                                <h3 class="pt-3 lh-base">الثقافة السيبرانية</h3>
+                                <p class="mb-0">تعلم الأساسيات والثقافات السيبرانية لتحمي بياناتك الشخصية في العالم الرقمي.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="border rounded-1 border-700 h-100 features-items">
+                            <div class="p-5"><img src="assets/img/gallery/profile.png" alt="دعم" style="width:52px;height:52px;" />
+                                <h3 class="pt-3 lh-base">نصائح الدعم الفني</h3>
+                                <p class="mb-0">احصل على إرشادات من خبرائنا لتقديم الدعم الفني لمشاكلك السيبرانية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================-->
+        <!-- قسم بطاقات المؤسسين-->
+        <!-- ============================================-->
+        <section class="bg-secondary mt-5">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h1 class="display-6 fw-semi-bold">بطاقات المؤسسين</h1> 
+                    <!-- عنوان القسم الخاص بالمؤسسين -->
+                </div>
+                <div class="row flex-center">
+                    <!-- بطاقات تعريفية للمؤسسين مع صور وأوصاف وروابط LinkedIn -->
+                    <div class="col-sm-9 col-md-4 mt-3">
+                        <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-800 plans-cards mt-md-9">
+                            <img src="assets/img/gallery/team.jpg" alt="المؤسس الأول" class="rounded-circle mb-3" style="width: 80px; height: 80px;">
+                            <p class="fs-2 ls-2">تركي عوض الحربي</p>
+                            <p class="mb-0">خبير أمان سيبراني ومؤسس مشارك</p>
+                            <a href="https://www.linkedin.com/in/founder1" class="btn btn-gray mt-4">حساب لنكدن</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-md-4 mt-3">
+                        <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-800 plans-cards mt-0">
+                            <img src="assets/img/gallery/team2.jpg" alt="المؤسس الثاني" class="rounded-circle mb-3" style="width: 80px; height: 80px;">
+                            <p class="fs-2 ls-2">منور فريح الحربي</p>
+                            <p class="mb-0">مختص في التوعية السيبرانية</p>
+                            <a href="https://www.linkedin.com/in/founder2" class="btn btn-gray mt-4">حساب لنكدن</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-md-4 mt-3">
+                        <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-800 plans-cards mt-md-9">
+                            <img src="assets/img/gallery/hacker.jpg" alt="المؤسس الثالث" class="rounded-circle mb-3" style="width: 80px; height: 80px;">
+                            <p class="fs-2 ls-2">بكر مفرح العنزي</p>
+                            <p class="mb-0">مهندس أمن شبكات</p>
+                            <a href="https://www.linkedin.com/in/founder3" class="btn btn-gray mt-4">حساب لنكدن</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-md-4 mt-3">
+                        <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-800 plans-cards mt-0">
+                            <img src="assets/img/gallery/logo.png" alt="المؤسس الرابع" class="rounded-circle mb-3" style="width: 80px; height: 80px;">
+                            <p class="fs-2 ls-2">عبدالله مساعد السحيمي</p>
+                            <p class="mb-0">مدرب وناشط في مجال الأمان السيبراني</p>
+                            <a href="https://www.linkedin.com/in/founder4" class="btn btn-gray mt-4">حساب لنكدن</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================-->
+        <!-- القسم الأخير-->
+        <!-- ============================================-->
+        <section>
+            <div class="container">
+                <div class="text-center text-xl-start">
+                    <div class="p-5 bg-primary rounded-3 d-flex flex-column justify-content-xl-between flex-xl-row" style="border-radius: 12px;">
+                        <!-- تنسيق دعوة للاشتراك في القائمة البريدية -->
+                        <div class="py-3">
+                            <h4 class="opacity-50 ls-2 lh-base fw-medium">هل تود التعرف اكثر على الحماية السيبرانية</h4>
+                            <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-semi-bold">اشترك في القائمة البريدية</h2>
+                        </div>
+                        <form action="#" method="post" class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                            <!-- نموذج لجمع البريد الإلكتروني من المستخدم -->
+                            <input class="form-control form-control-lg mb-3 mb-md-0" style="width: 300px; margin-left: 10px; border-radius: 12px;" type="email" name="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                            <button class="btn btn-info btn-lg" type="submit" style="border-radius: 12px;">اشترك الان <span class="fas fa-arrow-left"> </span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer bg-800">
+        <div class="container">
+            <div class="footer-content">
+                <!-- الشعار -->
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="assets/img/gallery/logo.png" alt="آمـن" class="footer-logo-img">
+                    </a>
+                </div>
+
+                <!-- الروابط -->
+                <div class="footer-links">
+                    <h4>روابط مهمة</h4>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="tips.html">نصائح توعوية</a></li>
+                        <li><a href="attacks.html">أشكال الاحتيالات الإلكترونية</a></li>
+                    </ul>
+                </div>
+
+                <!-- وسائل التواصل الاجتماعي -->
+                <div class="footer-social">
+                    <h4>تابعنا على</h4>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p>&copy; <span id="year"></span> جميع الحقوق محفوظة لـ "آمـن"</p>
+        </div>
+    </footer>
+
+    <script>
+        // تحديث السنة الحالية تلقائياً
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- ===============================================-->
+    <!--    الجافا سكربت-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script> 
+    <!-- مكتبة Popper.js لدعم ميزات الإطارات المنبثقة في Bootstrap -->
+    <script src="vendors/bootstrap/bootstrap.min.js"></script> 
+    <!-- مكتبة Bootstrap لتوفير تصميم استجابي وقوالب جاهزة -->
+    <script src="assets/js/theme.js"></script> 
+    <!-- ملفات الجافا سكربت الخاصة بالموقع -->
+</body>
+
+</html>
